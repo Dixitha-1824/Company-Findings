@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #e8f5e9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+
+
+    .inp-cont {
+      background-color: #ffffff;
+      box-shadow: 0 0 15px black ; 
+      padding: 20px;
+      
+    }
+
+    .inp-cont input {
+      margin-left: 10px;
+      margin-top: 5px;
+      height: 35px;
+      width: 500px;
+      border: 2px solid #43a047; 
+      border-radius: 5px;
+    }
+
+    input:focus {
+      outline: none;
+      border: 2px solid #2e7d32; 
+      box-shadow: 0 0 8px #a5d6a7; 
+  }
+
+
+    button {
+      margin-left: 200px;
+      width: 100px;
+      height: 50px;
+      background-color: #2e7d32; 
+      color: white;
+      cursor: pointer;
+      border: none;
+    }
+
+    button:hover{
+      transform: translateY(-5px);
+      transition: 0.5s;
+    }
+
+    label {
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+  <form action="/action">
+      <div class="inp-cont">
+        <label for="mail">Enter Your Email</label>
+        <br>
+        <input type="text" placeholder="Enter email" id="mail">
+        <br><br>
+        
+        <label for="pass">Enter Password</label>
+        <br>
+        <input type="text" placeholder="Enter password" id="pass">
+        <br><br>
+        
+        <label for="conf">Confirm password</label>
+        <br>
+        <input type="text" placeholder="Confirm password" id="conf">
+        <br><br>
+        
+        <button type="submit">Signup</button>
+    </div>
+  </form>
+
+
+<script src="signup.js"></script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <style>
+
+        *{
+            padding:0;
+            margin:0;
+            box-sizing: border-box;
+        }
+
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #d0e8f2, #f8f0ff); /* soft gradient background */
+        }
+        .container{
+            width: 500px;
+            height:550px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #ffffff; 
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+        }
+        .inp{
+            width:400px;
+            height: 400px;
+            background: linear-gradient(135deg, #d0e8f2, #f8f0ff); /* same as body */
+            padding-top: 20px;
+            padding-left:15px;
+            border-radius: 10px;
+        }
+        button{
+            height: 40px;
+            width:350px;
+            background-color: #6c63ff; 
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 6px;
+        }
+        button:hover {
+            background-color: #574fd6; 
+        }
+        #mail, #pass{
+            height:40px;
+            width:350px;
+            background-color: #ffffff; 
+            border: 1px solid #ccc;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        input{
+            margin-top:10px;
+            outline: none;
+        }
+        input:hover{
+            box-shadow: 0 0 8px #a5d6a7;
+            transition: 0.2s;
+        }
+        label{
+            font-size: 17px;
+            color: #333; 
+        }
+        .confirmation{
+            margin-top: 15px;
+            margin-left: 60px;
+            color: #444;
+        }
+        .confirmation a {
+            color: #6c63ff; 
+            text-decoration: none;
+        }
+        .confirmation a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="container">
+        <div class="inp">
+            <label for="mail">Enter Your Email</label>
+            <br>
+            <input type="text" placeholder="Enter email" id="mail">
+            <br><br>
+            
+            <label for="pass">Enter Password</label>
+            <br>
+            <input type="text" placeholder="Enter password" id="pass">
+            <br><br>
+            
+            <button type="submit">Login</button>
+            <p class="confirmation">Don't have an account? <a href="signup.html">Sign up</a></p>
+        </div>
+    </div>
+</body>
+</html>
