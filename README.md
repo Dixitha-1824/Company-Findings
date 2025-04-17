@@ -11,4 +11,5 @@ This is a simple web project that displays IT, product, and service-based compan
 - HTML
 - CSS
 - JavaScript
+- JSON
 
